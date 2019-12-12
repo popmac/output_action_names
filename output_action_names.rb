@@ -19,7 +19,7 @@ class OutputActionNames
 
     # 以下のような構造にする
     # [['MembersController', 'index'], ['MembersController', 'new']]
-    class_name_and_action_array = []
+    class_name_and_action_array = [['Controller', 'Action']]
     class_names.each do |class_name|
       actions = eval("#{class_name}.instance_methods(false).sort")
 
